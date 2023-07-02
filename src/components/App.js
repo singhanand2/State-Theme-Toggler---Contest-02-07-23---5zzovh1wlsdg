@@ -5,7 +5,7 @@ export default function App() {
     const [theme, setTheme]= useState("light");
 
     const theamChange= ()=>{
-        setTheme(currTheme =>(currTheme==='light'?'dark':'ligth'));
+        setTheme(theme==='light'?'dark':'ligth');
     }
 
     return (
