@@ -5,11 +5,11 @@ export default function App() {
     const [theme, setTheme]= useState("light");
 
     const theamChange= ()=>{
-        setTheme(theme==='light'?'dark':'ligth');
+        setTheme(currTheme=>(currTheme==='light'?'dark':'ligth'));
     }
 
     return (
-        <div className="App">
+        <div className="App" id={theme=== 'light'?'light':'dark'}>
             <h1>Newton School</h1>
             <div>
                 <form>
